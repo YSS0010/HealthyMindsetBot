@@ -42,7 +42,7 @@ client.on('message', async msg => { // eslint-disable-line
 			return msg.channel.send('I cannot speak in this voice channel, check permissions!');
 		}
 
-		if (url.match(/^https?:\/\/(www.youtube.com|youtube.com)\/playlist(.*)$/)) {
+		if (url.match(/^https?:\/\/(www.youtube.com|youtube.com)\/playlist(.*)$/)) { //work in progress
 			const playlist = await youtube.getPlaylist(url);
 			const videos = await playlist.getVideos();
 			for (const video of Object.values(videos)) {
