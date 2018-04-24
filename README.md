@@ -1,0 +1,2 @@
+# HealthyMindsetBot
+HEALTHYMINDSETONLY
